@@ -1,0 +1,12 @@
+{
+    "name": "zhamao/framework-starter",
+    "description": "composer project of zhamao-framework-starter",
+    "minimum-stability": "stable",
+    "license": "Apache-2.0",
+    "version": "1.0",
+    "type": "project",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=7.2"
+    }
+}
