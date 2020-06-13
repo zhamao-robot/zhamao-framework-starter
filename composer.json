@@ -3,12 +3,22 @@
     "description": "composer project of zhamao-framework-starter",
     "minimum-stability": "stable",
     "license": "Apache-2.0",
-    "version": "1.1",
+    "version": "1.2",
     "type": "project",
     "prefer-stable": true,
     "require": {
         "php": ">=7.2",
-        "zhamao/framework": "~1.3"
+        "zhamao/framework": "~1.5",
+        "ext-pdo": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Module\\": "src/Module",
+            "Custom\\": "src/Custom"
+        },
+        "files": [
+            "src/Custom/global_function.php"
+        ]
     },
     "scripts": {
         "server": "vendor/bin/start server",
