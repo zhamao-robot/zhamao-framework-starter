@@ -3,9 +3,9 @@
 
 ## 用法
 ```bash
-composer create-project zhamao/framework-starter
+composer create-project zhamao/framework-starter <你的项目名称>
 cd framework-starter
-composer run server
+vendor/bin/start server
 ```
 
 ## 指令
@@ -13,7 +13,6 @@ composer run server
 vendor/bin/start server                 # 以默认模式启动
 vendor/bin/start server --log-debug     # 以 debug 的日志启动
 vendor/bin/start server --debug-mode    # 以 debug 调试模式启动
-composer run systemd                    # 生成 systemd 文件
 ```
 
 ## Composer 速度太慢
