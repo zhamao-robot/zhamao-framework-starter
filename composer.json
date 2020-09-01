@@ -8,7 +8,7 @@
     "prefer-stable": true,
     "require": {
         "php": ">=7.2",
-        "zhamao/framework": "~1.5",
+        "zhamao/framework": "^1.6",
         "ext-pdo": "*"
     },
     "autoload": {
