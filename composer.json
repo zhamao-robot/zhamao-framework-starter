@@ -3,22 +3,12 @@
     "description": "composer project of zhamao-framework-starter",
     "minimum-stability": "stable",
     "license": "Apache-2.0",
-    "version": "1.2",
+    "version": "1.3",
     "type": "project",
     "prefer-stable": true,
     "require": {
         "php": ">=7.2",
-        "zhamao/framework": "~1.5",
-        "ext-pdo": "*"
-    },
-    "autoload": {
-        "psr-4": {
-            "Module\\": "src/Module",
-            "Custom\\": "src/Custom"
-        },
-        "files": [
-            "src/Custom/global_function.php"
-        ]
+        "zhamao/framework": "^1.5"
     },
     "scripts": {
         "server": "vendor/bin/start server",
@@ -28,5 +18,14 @@
         "server:log-warning": "vendor/bin/start server --log-warning",
         "server:debug-mode": "vendor/bin/start server --debug-mode",
         "systemd": "vendor/bin/start systemd"
+    },
+    "autoload": {
+        "psr-4": {
+            "Module\\": "src/Module",
+            "Custom\\": "src/Custom"
+        },
+        "files": [
+            "src/Custom/global_function.php"
+        ]
     }
 }

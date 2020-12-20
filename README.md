@@ -1,11 +1,13 @@
 # zhamao-framework-starter
 炸毛框架的快速开始模板，是炸毛框架开箱即用的项目。
 
+注意：本快速模板分为 1.x 和 2.x 两个版本，目前默认拉取的都是 1.x 版本的，等炸毛框架 v2 正式发布后切换为 v2 版本的模板。
+
 ## 用法
 ```bash
 composer create-project zhamao/framework-starter
 cd framework-starter
-composer run server
+vendor/bin/start server
 ```
 
 ## 指令

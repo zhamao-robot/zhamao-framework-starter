@@ -27,7 +27,8 @@ $config['swoole'] = [
     'log_file' => $config['crash_dir'] . 'swoole_error.log',
     'worker_num' => 1,
     'dispatch_mode' => 2,
-    'task_worker_num' => 0
+    //'task_worker_num' => 1,
+    //'task_enable_coroutine' => true
 ];
 
 /** MySQL数据库连接信息，host留空则启动时不创建sql连接池 */
@@ -43,7 +44,8 @@ $config['sql_config'] = [
         PDO::ATTR_STRINGIFY_FETCHES => false,
         PDO::ATTR_EMULATE_PREPARES => false
     ],
-    'sql_no_exception' => false
+    'sql_no_exception' => false,
+    'sql_default_fetch_mode' => PDO::FETCH_BOTH         // added in 1.5.6
 ];
 
 /** CQHTTP连接约定的token */
@@ -82,6 +84,11 @@ $config['static_file_server'] = [
     'document_index' => [
         'index.html'
     ]
+];
+
+/** 注册 Swoole Server 事件注解的类列表 */
+$config['server_event_handler_class'] = [
+    \Framework\ServerEventHandler::class,
 ];
 
 return $config;
