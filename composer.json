@@ -3,12 +3,12 @@
     "description": "composer project of zhamao-framework-starter",
     "minimum-stability": "stable",
     "license": "Apache-2.0",
-    "version": "1.4",
+    "version": "2.0",
     "type": "project",
     "prefer-stable": true,
     "require": {
         "php": ">=7.2",
-        "zhamao/framework": "^1.5"
+        "zhamao/framework": "^2.0"
     },
     "scripts": {
         "server": "vendor/bin/start server",
