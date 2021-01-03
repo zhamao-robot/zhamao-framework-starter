@@ -18,6 +18,9 @@
     "require": {
         "zhamao/framework": "^2.1"
     },
+    "require-dev": {
+        "swoole/ide-helper": "@dev"
+    },
     "autoload": {
         "psr-4": {
             "Module\\": "src/Module",
