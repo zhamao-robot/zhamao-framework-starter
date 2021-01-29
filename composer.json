@@ -3,7 +3,7 @@
     "description": "composer project of zhamao-framework-starter",
     "minimum-stability": "stable",
     "license": "Apache-2.0",
-    "version": "2.1",
+    "version": "2.2",
     "type": "project",
     "prefer-stable": true,
     "scripts": {
@@ -16,7 +16,7 @@
         "systemd": "vendor/bin/start systemd"
     },
     "require": {
-        "zhamao/framework": "^2.1"
+        "zhamao/framework": "^2.2"
     },
     "require-dev": {
         "swoole/ide-helper": "@dev"
