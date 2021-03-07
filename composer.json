@@ -3,7 +3,7 @@
     "description": "composer project of zhamao-framework-starter",
     "minimum-stability": "stable",
     "license": "Apache-2.0",
-    "version": "2.2",
+    "version": "2.3",
     "type": "project",
     "prefer-stable": true,
     "scripts": {
@@ -20,6 +20,12 @@
     },
     "require-dev": {
         "swoole/ide-helper": "@dev"
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://mirrors.aliyun.com/composer/"
+        }
     },
     "autoload": {
         "psr-4": {
