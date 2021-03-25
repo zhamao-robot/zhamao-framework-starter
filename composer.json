@@ -3,37 +3,17 @@
     "description": "composer project of zhamao-framework-starter",
     "minimum-stability": "stable",
     "license": "Apache-2.0",
-    "version": "2.3",
+    "version": "2.4",
     "type": "project",
     "prefer-stable": true,
-    "scripts": {
-        "server": "vendor/bin/start server",
-        "server:log-debug": "vendor/bin/start server --log-debug",
-        "server:log-verbose": "vendor/bin/start server --log-verbose",
-        "server:log-info": "vendor/bin/start server --log-info",
-        "server:log-warning": "vendor/bin/start server --log-warning",
-        "server:debug-mode": "vendor/bin/start server --debug-mode",
-        "systemd": "vendor/bin/start systemd"
-    },
     "require": {
-        "zhamao/framework": "^2.2"
+        "zhamao/framework": "^2.4"
     },
     "require-dev": {
         "swoole/ide-helper": "@dev"
     },
-    "repositories": {
-        "packagist": {
-            "type": "composer",
-            "url": "https://mirrors.aliyun.com/composer/"
-        }
-    },
-    "autoload": {
-        "psr-4": {
-            "Module\\": "src/Module",
-            "Custom\\": "src/Custom"
-        },
-        "files": [
-            "src/Custom/global_function.php"
-        ]
+    "scripts": {
+        "post-create-project-cmd": "vendor/bin/start init",
+        "post-update-cmd": "vendor/bin/start check:config"
     }
 }
