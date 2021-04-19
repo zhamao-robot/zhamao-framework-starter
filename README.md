@@ -12,6 +12,21 @@ cd <你的项目名称>
 vendor/bin/start server
 ```
 
+## 手动构建环境
+炸毛框架提供了一个编译 PHP 和相关依赖的脚本，可直接运行（需要有 gcc，g++，autoconf，make，git，curl 这几个构建基本的包已安装）
+```bash
+./build-runtime.sh
+```
+他会下载 Swoole、PHP、openssl、composer 等源码并从源码编译到 `runtime` 目录下。
+
+在构建成功后，所有的 PHP 二进制文件和相关依赖都被编译到 `./runtime/` 目录中，如不需要环境或环境出错，可直接删除此文件夹来删除环境，不污染主机环境。
+
+使用这个用户态编译完成的 PHP：
+```bash
+runtime/bin/php -v                      # 查看 PHP 版本
+runtime/bin/php vendor/bin/start server # 运行框架，也可运行其他 PHP 脚本
+```
+
 ## 指令
 ```bash
 vendor/bin/start server                 # 以默认模式启动
