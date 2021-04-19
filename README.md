@@ -12,7 +12,10 @@ cd <你的项目名称>
 vendor/bin/start server
 ```
 
-## 手动构建环境
+## 搭建环境
+见炸毛框架文档：<https://docs-v2.zhamao.xin/>
+
+## 手动构建环境（新）
 炸毛框架提供了一个编译 PHP 和相关依赖的脚本，可直接运行（需要有 gcc，g++，autoconf，make，git，curl 这几个构建基本的包已安装）
 ```bash
 ./build-runtime.sh
