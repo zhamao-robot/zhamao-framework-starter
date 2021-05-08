@@ -3,11 +3,11 @@
     "description": "composer project of zhamao-framework-starter",
     "minimum-stability": "stable",
     "license": "Apache-2.0",
-    "version": "2.4",
+    "version": "2.5",
     "type": "project",
     "prefer-stable": true,
     "require": {
-        "zhamao/framework": "^2.4"
+        "zhamao/framework": "^2.5"
     },
     "require-dev": {
         "swoole/ide-helper": "@dev"
