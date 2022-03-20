@@ -3,7 +3,7 @@
     "description": "composer project of zhamao-framework-starter",
     "minimum-stability": "stable",
     "license": "Apache-2.0",
-    "version": "2.4",
+    "version": "2.5",
     "type": "project",
     "prefer-stable": true,
     "require": {
