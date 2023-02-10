@@ -3,7 +3,7 @@
 
 [![Latest Stable Version](http://img.shields.io/packagist/v/zhamao/framework-starter.svg)](https://packagist.org/packages/zhamao/framework-starter)
 
-注意：本快速模板目前拉取的都是 v2 的版本，如果想使用 v1 的版本，请使用版本号后缀 `^1.4`。
+注意：本快速模板目前拉取的都是 2.x 的版本，如果想使用 v3 的版本，请使用版本号后缀 `^3.0`。
 
 ## 用法
 ```bash
